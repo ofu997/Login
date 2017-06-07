@@ -25,8 +25,8 @@ a: hover{
 }
 
 .login{
-  width: 500px;
-  height: 323px;
+  /*width: 500px;
+  height: 323px;*/
   border: 2px solid #alalal;
   box-decoration-break: inset 0 0 5px #alalal;
   border-radius: 10px;
@@ -52,8 +52,8 @@ form{
 input[type="text"],
 input[type="password"]{
   outline: none;
-  font-size: 20px;
-  width: 450px;
+  /*font-size: 20px;*/
+  /*width: 450px;*/
   font-family: caption;
   border: 4px double #dedee0;
   padding: 5px;
@@ -70,10 +70,10 @@ input[type="password"]:focus{
   outline: none;
   color: #alalal;
   font-weight: bold;
-  font-size: 20;
-  width: 115px;
-  height: 50px;
-  margin: 45px 0 0 110px;
+  /*font-size: 20;*/
+  /*width: 115px;*/
+  /*height: 50px;*/
+  /*margin: 45px 0 0 110px;*/
   text-align: center;
   border-radius: 25px;
   background: #dedee0;
@@ -100,6 +100,66 @@ input[type="password"]:focus{
   font-size: 15px;
 }
 
-.forgot a{
+/*.forgot a{
   margin: 0 0 0 35%;
+}*/
+
+/*--------------------
+>=500px will display like so
+----------------------*/
+@media(min-width:500px){
+  .login{
+    width: 500px;
+    height: 323px;
+  }
+  input[type="text"],
+  input[type="password"]{
+    width: 430px;
+    font-size: 20px;
+  }
+  .btn{
+    font-size: 20px;
+    width: 125px;
+    height: 50px;
+    margin: 45px 0 0 110px;
+  }
+  .forgot a{
+    margin: 0 0 0 35%;
+  }
+  .chk{
+    margin: 5% 0 0 0 ;
+  }
+  .rem {
+    margin: 5% 0 0 10px;
+  }
+}
+/*-----------------------
+Screen size less than 500px wide, following styles will be applied.
+------------------------*/
+@media (max-width: 400px){
+  .login{
+    width: 300px;
+    height: 297px;
+    background-color: #eff0f2;
+  }
+  input[type="text"],
+  input[type="password"]{
+    width: 250px;
+    font-size: 15px;
+  }
+  .btn{
+    font-size: 14px;
+    width: 225px;
+    height: 40px;
+    margin:15% 0 0 7%;
+  }
+  .forgot a{
+    margin: 0 0 0 25%;
+  }
+  .chk{
+    marign: 6% 0 0 0 ;
+  }
+  .rem{
+    margin: 6% 0 0 5%;
+  }
 }
